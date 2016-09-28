@@ -1,0 +1,83 @@
+%!TEX TS-program = xelatex
+
+\documentclass[]{friggeri-cv}
+\addbibresource{bibliography.bib}
+
+\usepackage{fontawesome}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+  {<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+
+\begin{document}
+\header{Jaume}{ Gasa Gómez}
+       {Ingenierio Informático}
+
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Contacto}
+    \noindent \href{mailto:ua.jaume@gmail.com}{\faEnvelope~ua.jaume@gmail.com} \hfill
+    \faMobile~605 871 039
+    \href{https://github.com/jaume-gasa/}{\faGithub ~jaume-gasa}
+  \section{Idiomas}
+    Castellano nativo
+    Valenciano nativo
+    Inglés B2
+  \section{Programación}
+    {\color{red} \faHeart} Python
+    C++, Java, Arduino
+    \LaTeX{}
+\end{aside}
+
+
+\section{Datos personales}
+
+\entry{Fecha de nacimiento}{~14 de julio de 1992}{}{}
+\entry{Lugar de nacimiento}{~Barcelona, España}{}{}
+\entry{DNI}{~53245501-H}{}{}
+\entry{Domicilio}{~San Vicente del Raspeig, Alicante, España}{}{}
+
+\section{Formación}
+
+\begin{entrylist}
+  \threeentry
+    {2016~}
+    {~Grado en Ingeniería Informática}
+    {~Universidad de Alicante}
+  \threeentry
+    {2015~}
+    {~Introduction to Computational Thinking and Data Science}
+    {MITx}
+  \threeentry
+    {2014~}
+    {~Curso CECLEC Taller impresoras 3D REPRAP}
+    {Universidad de Alicante}
+\end{entrylist}
+
+\section{Proyectos}
+
+\begin{entrylist}
+  \entry
+    {}
+    {Control de prótesis 3D mioeléctrica}
+    {}
+    {\emph{Uso de OpenCV y un dispositvo EMG para obtener datos del movimiento de los dedos
+    y usarlos en una red neuronal, desarrollada en Lasagne, para controlar los dedos de una
+    prótesis hecha mediante impresión 3D.}}
+\end{entrylist}
+
+\section{Conocimientos}
+2 años de experiencia en tecnologías de impresión 3D
+
+1 año de experiencia con librerías orientadas a la inteligencia artificial y la
+\\ciencia de datos: NumPy, Matplotlib, Scikit-learn, Keras y Lasagne(Theano)
+
+\section{Idiomas}
+
+\entry
+{2015~} {~Acreditación CertACLES B1 inglés, Universidad de Alicante}{}{}
+\entry
+{2014~} {~Inglés B2 oral, curso inglés intensivo, Universidad Menendez Pelayo}{}{}
+
+\end{document}
