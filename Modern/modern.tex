@@ -23,18 +23,21 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[11pt,a4paper, sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage[utf8]{inputenc}
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
-\setlength{\hintscolumnwidth}{3.25cm} % Uncomment to change the width of the dates column
+%\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[top=0.8in, bottom=1in, left=1in, right=1.25in]{geometry} % Reduce document margins
+
+
+%\setlength{\hintscolumnwidth}{3.25cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
@@ -45,11 +48,18 @@
 \familyname{Gasa Gómez} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{}
-\address{San Vicente del Raspeig}{Alicante 03690}
+\title{Inteligencia Artificial y Robótica}
 
-\phone{605 871 039}
-\email{ua.jaume@gmail.com}
+%\address{San Vicente del Raspeig}{Alicante 03690}
+%\phone{605 871 039}
+%\email{ua.jaume@gmail.com}
+
+\address{XXX}{XXX}
+\phone{XXX}
+\email{XXX}
+
+
+
 \homepage{github.com/jaume-gasa} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
@@ -61,42 +71,58 @@
 
 \makecvtitle % Print the CV title
 
-
-\section{Datos personales}
-\cvitem{Fecha de nacimiento}{14 de Julio de 1992}
-\cvitem{Lugar de nacimiento}{Barcelona, España}
-\cvitem{DNI}{53245501H}
-\cvitem{Domicilio}{San Vicente del Raspeig, Alicante, España}
-\cvitem{Email}{ua.jaume@gmail.com}
-\cvitem{Teléfono}{605 871 039}
+%\section{Datos personales}
+%\cvitem{Fecha de nacimiento}{14 de Julio de 1992}
+%\cvitem{Lugar de nacimiento}{Barcelona, España}
+%\cvitem{DNI}{53245501H}
+%\cvitem{Domicilio}{San Vicente del Raspeig, Alicante, España}
+%\cvitem{Email}{ua.jaume@gmail.com}
+%\cvitem{Teléfono}{605 871 039}
 
 \section{Formación}
-\cvitem{2016}{Grado en Ingenieria Informática, \textit{Universidad de Alicante}}
-\cvitem{2015}{Introduction to Computational Thinking and Data Science, \textit{Massachusetts
-Institute of Technology through edX} }
-\cvitem{2014}{Curso CECLEC Taller impresoras REPRAP, \textit{Universidad de Alicante}}
+\cvitem{2017--}{\textbf{Máster en Automática y Robótica}, \textit{Universidad de Alicante}.}
+\cvitem{2016}{\textbf{Grado en Ingenieria Informática}, \textit{Universidad de Alicante}.}
+\cvitem{2015}{\textbf{Introduction to Computational Thinking and Data Science}, \textit{Massachusetts
+Institute of Technology through edX}.}
+\cvitem{2014}{\textbf{Curso CECLEC impresoras REPRAP}, \textit{Universidad de Alicante}.}
 
 \section{Conocimientos}
-
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
+\cvitem{}{\textbf{Python} avanzado.}
+\cvitem{}{Cómodo en lenguajes como C/C++, Java y sistemas embebidos (Arduino y Raspberry Pi).}
+% \cvlistitem{Programas de diseño 3D: OpenSCAD, Blender}
 
+\cvitem{}{Librerías de inteligencia artificial y ciencia de datos: NumPy, Matplotlib, Scikit-learn, Keras, Tensorflow y Lasagne(Theano).}
+\cvitem{}{Conocimientos avanzados de sistemas GNU/Linux (x86-64 y ARM).}
+\cvitem{}{Herramientas de impresión y diseño 3D: Pronterface, Cura y OpenSCAD.}
+\cvitem{}{Composición de documentos \LaTeX{}.}
 
-\cvlistdoubleitem{Python}{C++}
-\cvlistdoubleitem{Java}{Arduino}
-\cvlistitem{Programas de diseño 3D: OpenSCAD, Blender}
-\cvlistitem{Herramientas de impresión 3D: Pronterface, Cura}
-\cvlistitem{Librerías de inteligencia artificial y ciencia de datos: NumPy, Matplotlib, Scikit-learn, Keras y Lasagne(Theano)}
-\cvlistitem{Administración de sistemas GNU/Linux}
-\cvlistitem{Composición de documentos \LaTeX{}}
+\section{Experiencia}
+\cvitem{2016-}{\textbf{Investigador}, \textit{Departamento Visión Robótica}, Universidad de Alicante.}
+\cvitem{}{Desarrollo de un coche autónomo con Raspberry Pi utilizando redes neuronales recurrentes.}
+\cvitem{2016--}{\textbf{Adminstrador de sistemas}, \textit{ANDA Alicante}.}
+\cvitem{}{Configuración y mantenimiento de equipos informáticos.}
+ 
+
+\section{Eventos}
+\cvitem{2017}{\textbf{Ponente en Mes Cultural EPS}, \textit{Introducción al deep learning con Keras}. \href{https://github.com/jaume-gasa/IntroduccionDeepLearningMesCultural2017ALC/blob/master/presentacion.pdf}{[Diapositivas]}}
+\cvitem{2016}{\textbf{Ponente en PyDay Alicante}, \textit{Estado del arte del deep learning}.\href{https://github.com/jaume-gasa/EstadoDelArteDeepLearningPyDayAlicante/blob/master/presentacion.pdf}{ [Diapositivas]}}
+
 
 \section{Proyectos}
-\cvitem{}{Control de prótesis 3D mioeléctrica: uso de OpenCV y un dispositvo EMG para obtener datos del movimiento
-de los dedos y usarlos en una red neuronal, desarrollada en Lasagne, para
-controlar los dedos de una prótesis hecha mediante impresión 3D.}
+\cvitem{2016--}{Control de prótesis 3D mioeléctrica mediante dispositivos EMG (MYO armband), visión (Leap Motion) y redes neuronales.}
+\cvitem{2014}{Web de traducción de texto castellano a braille y generación de un modelo para su impresión 3D.} 
+
+%\cvitem{}{Control de prótesis 3D mioeléctrica: uso de OpenCV y un dispositvo EMG para obtener datos del movimiento
+%de los dedos de una mano y usarlos en una red neuronal, desarrollada en Lasagne, para
+%controlar los dedos de una prótesis hecha mediante impresión 3D.}
+
+%\cvitem{}{Traducción de texto a braille y generación de un modelo para su impresión 3D: puesta en marcha desde cero %de una web escrita en Django capaz de traducir texto en castellano y braile para posteriormente, mediante un
+%\textit{script} en OpenSCAD generar un modelo en 3D del texto en braille con sus medidas estándar.}
 
 \section{Idiomas}
-\cvitem{2015}{Acreditación CertACLES B1 inglés, \textit{Universidad de Alicante} }
-\cvitem{2014}{Inglés B2 oral, curso inglés intensivo, \textit{Universidad Menendez Pelayo} }
+\cvitem{2015}{Acreditación CertACLES B1 inglés, \textit{Universidad de Alicante}.}
+\cvitem{2014}{Inglés B2 oral, curso inglés intensivo, \textit{Universidad Menendez Pelayo}.}
 
 \end{document}
